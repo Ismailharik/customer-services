@@ -27,7 +27,7 @@ public class CustomerServiceImpl implements CustomerService{
     public CustomerResponseDTO save(CustomerRequestDTO customerRequestDTO) {
         /*Mapping Object to object */
         Customer customer =customerMapper.customerRequestDTOToCustomer(customerRequestDTO);
-        customer.setId(UUID.randomUUID().toString());
+//        customer.setId(UUID.randomUUID().toString());
         Customer savedCustomer =this.customerRepository.save(customer);
         CustomerResponseDTO customerResponseDTO = this.customerMapper.customerToCustomerResponseDTO(savedCustomer);
 

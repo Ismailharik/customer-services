@@ -75,6 +75,7 @@
                 </exclusion>
             </exclusions>-->
         </dependency>
+
     </dependencies>
 
     <build>
@@ -110,7 +111,6 @@
                             <artifactId>mapstruct-processor</artifactId>
                             <version>1.4.2.Final</version>
                         </path>
-                        <!-- other annotation processors -->
                     </annotationProcessorPaths>
                 </configuration>
             </plugin>
